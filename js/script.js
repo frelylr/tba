@@ -34,7 +34,7 @@ function checkChartJsLoaded() {
 function fetchPlayers() {
     const loadingElement = document.querySelector('.loading');
 
-    fetch('data.json')
+    fetch('data/data.json')
         .then(data => {
 			allPlayers = data;
 			if (loadingElement) loadingElement.remove();
