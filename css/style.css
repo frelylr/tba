@@ -1,0 +1,279 @@
+:root {
+	--primary-color: #3498db;
+	--secondary-color: #2ecc71;
+	--dark-color: #2c3e50;
+	--light-color: #ecf0f1;
+	--shadow: 0 4px 6px rgba(0,0,0,0.1);
+	--transition: all 0.3s ease;
+	--shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	--hover-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	margin: 0;
+	padding: 0;
+	background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+	min-height: 100vh;
+}
+
+.container {
+	max-width: 1400px;
+	margin: 0 auto;
+	padding: 30px;
+}
+
+.header {
+	text-align: center;
+	margin-bottom: 40px;
+	animation: fadeIn 1s ease;
+}
+
+.header h1 {
+	color: var(--dark-color);
+	font-size: 2.5rem;
+	margin-bottom: 10px;
+	text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+}
+
+.player-list {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+	gap: 30px;
+}
+
+.player-card {
+	background: linear-gradient(145deg, #ffffff 0%, #f8f9fa 100%);
+	border-radius: 16px;
+	padding: 25px;
+	box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+	transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+	position: relative;
+	overflow: hidden;
+}
+
+/* 动态光效边框 */
+.player-card::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 5px;
+	height: 100%;
+	background: linear-gradient(
+		180deg,
+		var(--primary-color) 100%,rgba(255,255,255,0.8) 100%
+	);
+	filter: drop-shadow(0 0 8px var(--primary-color));
+}
+
+/* 卡片悬浮效果 */
+.player-card:hover {
+	transform: translateY(-5px) scale(1.02);
+	box-shadow: 0 12px 30px rgba(0,0,0,0.15),
+				0 0 20px -5px var(--primary-color);
+}
+
+/* 卡片颜色分级 */
+.player-card[data-tier="orange"] { --primary-color: #ff6b35; } /* 总能力≥580 */
+.player-card[data-tier="purple"] { --primary-color: #9d4edd; } /* 总能力≥500 */
+.player-card[data-tier="blue"]   { --primary-color: #4361ee; } /* 总能力≥400 */
+.player-card[data-tier="green"]  { --primary-color: #2a9d8f; } /* 总能力<400 */
+
+/* 球员名字特效 */
+.player-info h3 {
+	font-size: 1.6rem;
+	margin-bottom: 12px;
+	position: relative;
+	display: inline-block;
+}
+
+.player-info h3::after {
+	content: '';
+	position: absolute;
+	bottom: -3px;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background: linear-gradient(90deg, var(--primary-color) 50%, transparent 100%);
+}
+
+/* 数据标签美化 */
+.player-info p {
+	margin: 10px 0;
+	padding-left: 24px;
+	position: relative;
+	font-size: 0.95rem;
+}
+
+.player-info p::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 16px;
+	height: 16px;
+	background: var(--primary-color);
+	border-radius: 4px;
+	opacity: 0.5;
+}
+
+/* 雷达图容器增强 */
+.radar-chart-container {
+	margin-top: 20px;
+	padding: 15px;
+	background: rgba(255,255,255,0.8);
+	border-radius: 12px;
+	border: 1px solid rgba(0,0,0,0.08);
+}
+
+.loading {
+	text-align: center;
+	padding: 50px;
+	color: var(--dark-color);
+	font-size: 1.2rem;
+}
+
+@keyframes fadeIn {
+	from { opacity: 0; transform: translateY(20px); }
+	to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 768px) {
+	.container {
+		padding: 15px;
+	}
+
+	.player-list {
+		grid-template-columns: 1fr;
+	}
+}
+
+.search-box {
+	margin: 20px auto;
+	max-width: 300px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.search-controls {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	width: 100%;
+}
+
+.search-input {
+	width: calc(100% - 200px);
+	padding: 12px 20px;
+	border: 2px solid var(--primary-color);
+	border-radius: 30px;
+	font-size: 1rem;
+	transition: var(--transition);
+	box-shadow: var(--shadow);
+}
+
+.search-input:focus {
+	outline: none;
+	border-color: var(--secondary-color);
+	box-shadow: 0 0 8px rgba(46, 204, 113, 0.3);
+}
+
+.sort-controls {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.sort-select {
+	position: relative;
+	width: auto; /* 根据内容自动调整宽度 */
+	padding: 8px 10px; /* 增加内边距 */
+	border: 2px solid var(--primary-color); /* 使用主色调作为边框颜色 */
+	font-size: 1rem; /* 字体大小与搜索框一致 */
+	cursor: pointer;
+	appearance: none; /* 移除默认样式 */
+	background-repeat: no-repeat;
+	background-position: right 10px center; /* 箭头位置调整 */
+	background-size: 12px 12px; /* 箭头大小调整 */
+}
+
+/* 隐藏默认的下拉箭头（针对现代浏览器） */
+.sort-select::-ms-expand {
+	display: none; /* 针对IE和Edge */
+}
+
+.sort-direction {
+	color: #007bff;
+	font-size: 1.2rem; /* 字体大小稍大，易于点击 */
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.sort-direction:hover {
+	transform: scale(1.1); /* 悬停时放大按钮 */
+}
+
+/* 确保搜索框与排序组件在视觉上协调 */
+.search-input {
+	/* ... 保留原有样式 ... */
+	border-radius: 25px; /* 与排序组件圆角一致 */
+	/* 确保焦点样式与排序按钮悬停颜色协调 */
+	box-shadow: 0 0 8px rgba(var(--rgb-secondary-color), 0.3); /* 使用次色调的RGBA值 */
+}
+
+:root {
+	--primary-color: #007bff; /* 示例主色调 */
+	--secondary-color: #28a745; /* 示例次色调，与搜索框焦点颜色相匹配 */
+	--rgb-secondary-color: 40, 167, 69; /* 次色调的RGB值，用于box-shadow */
+}
+
+/* 新增球员照片样式 */
+.player-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	margin-bottom: 15px;
+}
+
+.player-photo {
+	width: 100px;
+	height: 120px;
+	margin-top: 48px;
+	border-radius: 8px;
+	background: linear-gradient(145deg, #e0e0e0, #f5f5f5);
+	border: 2px solid var(--primary-color);
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
+
+.player-photo::before {
+	color: rgba(0, 0, 0, 0.3);
+	font-size: 14px;
+	font-weight: 500;
+	text-align: center;
+	position: absolute;
+	padding: 0 10px;
+}
+
+.player-photo img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+@media (max-width: 480px) {
+	.player-photo {
+		width: 80px;
+		height: 100px;
+	}
+}
