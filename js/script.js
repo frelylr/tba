@@ -23,18 +23,11 @@ document.addEventListener('DOMContentLoaded', function() {
     fetchPlayers();
 });
 
-function checkChartJsLoaded() {
-    if (typeof Chart === 'undefined') {
-        setTimeout(checkChartJsLoaded, 100);
-    } else {
-        fetchPlayers();
-    }
-}
-
 function fetchPlayers() {
     const loadingElement = document.querySelector('.loading');
 
     fetch('data/data.json')
+	.then(response => response.json())
         .then(data => {
 			allPlayers = data;
 			if (loadingElement) loadingElement.remove();
