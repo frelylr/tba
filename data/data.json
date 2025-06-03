@@ -135,12 +135,12 @@
   "position": "PF",
   "number": 17,
   "photo": "guoxinjie.png",
-  "offense": 70,
-  "defense": 75,
+  "offense": 75,
+  "defense": 70,
   "stamina": 65,
   "awareness": 65,
   "toughness": 60,
-  "consistency": 60
+  "consistency": 65
 }, {
   "name": "赵晨",
   "height": 176,
