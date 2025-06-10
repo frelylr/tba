@@ -249,7 +249,7 @@
 		"stamina": 55,
 		"awareness": 65,
 		"toughness": 65,
-		"consistency": 75
+		"consistency": 70
 	},
 	{
 		"name": "姜玉迪",
@@ -274,7 +274,7 @@
 		"photo": "wangming.png",
 		"offense": 65,
 		"defense": 60,
-		"stamina": 55,
+		"stamina": 50,
 		"awareness": 65,
 		"toughness": 65,
 		"consistency": 70
