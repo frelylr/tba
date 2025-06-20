@@ -1,5 +1,187 @@
 [
 	{
+		"name": "曹天宇",
+		"height": null,
+		"weight": null,
+		"position": "SG",
+		"number": null,
+		"photo": "caotianyu.png",
+		"offense": 70,
+		"defense": 60,
+		"stamina": 70,
+		"awareness": 55,
+		"toughness": 50,
+		"consistency": 65
+	},
+	{
+		"name": "刘旭",
+		"height": null,
+		"weight": null,
+		"position": "PF",
+		"number": null,
+		"photo": "liuxu.png",
+		"offense": 70,
+		"defense": 70,
+		"stamina": 60,
+		"awareness": 60,
+		"toughness": 60,
+		"consistency": 55
+	},
+	{
+		"name": "安康",
+		"height": 180,
+		"weight": 90,
+		"position": "C",
+		"number": null,
+		"photo": "ankang.png",
+		"offense": 80,
+		"defense": 70,
+		"stamina": 70,
+		"awareness": 45,
+		"toughness": 65,
+		"consistency": 70
+	},
+	{
+		"name": "孙俊辰",
+		"height": null,
+		"weight": null,
+		"position": "SG",
+		"number": null,
+		"photo": "sunjunchen.png",
+		"offense": 45,
+		"defense": 70,
+		"stamina": 75,
+		"awareness": 50,
+		"toughness": 70,
+		"consistency": 50
+	},
+	{
+		"name": "杨文杰",
+		"height": null,
+		"weight": null,
+		"position": "PF",
+		"number": null,
+		"photo": "yangwenjie.png",
+		"offense": 60,
+		"defense": 65,
+		"stamina": 60,
+		"awareness": 70,
+		"toughness": 50,
+		"consistency": 70
+	},
+	{
+		"name": "赵冬冬",
+		"height": null,
+		"weight": null,
+		"position": "PF",
+		"number": null,
+		"photo": "zhaodongdong.png",
+		"offense": 60,
+		"defense": 70,
+		"stamina": 60,
+		"awareness": 60,
+		"toughness": 60,
+		"consistency": 65
+	},
+	{
+		"name": "金爽",
+		"height": null,
+		"weight": null,
+		"position": "SG",
+		"number": null,
+		"photo": "jinshuang.png",
+		"offense": 60,
+		"defense": 60,
+		"stamina": 55,
+		"awareness": 75,
+		"toughness": 70,
+		"consistency": 50
+	},
+	{
+		"name": "刘轩昂",
+		"height": null,
+		"weight": null,
+		"position": "PF",
+		"number": null,
+		"photo": "liuxuanang.png",
+		"offense": 50,
+		"defense": 45,
+		"stamina": 55,
+		"awareness": 40,
+		"toughness": 70,
+		"consistency": 75
+	},
+	{
+		"name": "王雨",
+		"height": null,
+		"weight": null,
+		"position": "SF",
+		"number": null,
+		"photo": "wangyu.png",
+		"offense": 75,
+		"defense": 70,
+		"stamina": 75,
+		"awareness": 50,
+		"toughness": 55,
+		"consistency": 70
+	},
+	{
+		"name": "付昱霖",
+		"height": null,
+		"weight": null,
+		"position": "PF",
+		"number": null,
+		"photo": "fuyulin.png",
+		"offense": 55,
+		"defense": 75,
+		"stamina": 80,
+		"awareness": 40,
+		"toughness": 70,
+		"consistency": 55
+	},
+	{
+		"name": "李正南",
+		"height": null,
+		"weight": null,
+		"position": "PF",
+		"number": null,
+		"photo": "lizhengnan.png",
+		"offense": 80,
+		"defense": 75,
+		"stamina": 70,
+		"awareness": 65,
+		"toughness": 65,
+		"consistency": 65
+	},
+	{
+		"name": "齐永新",
+		"height": null,
+		"weight": null,
+		"position": "PG",
+		"number": null,
+		"photo": "qiyongxin.png",
+		"offense": 65,
+		"defense": 60,
+		"stamina": 65,
+		"awareness": 75,
+		"toughness": 60,
+		"consistency": 50
+	},
+	{
+		"name": "徐晗",
+		"height": null,
+		"weight": null,
+		"position": "PF",
+		"number": null,
+		"photo": "xuhan.png",
+		"offense": 70,
+		"defense": 70,
+		"stamina": 60,
+		"awareness": 65,
+		"toughness": 60,
+		"consistency": 65
+	},
+	{
 		"name": "程子龙",
 		"height": 176,
 		"weight": 95,
@@ -53,7 +235,7 @@
 		"stamina": 75,
 		"awareness": 85,
 		"toughness": 80,
-		"consistency": 95
+		"consistency": 90
 	},
 	{
 		"name": "徐博",
@@ -79,9 +261,9 @@
 		"offense": 75,
 		"defense": 70,
 		"stamina": 45,
-		"awareness": 60,
-		"toughness": 60,
-		"consistency": 80
+		"awareness": 55,
+		"toughness": 80,
+		"consistency": 85
 	},
 	{
 		"name": "赵志旭",
@@ -90,12 +272,12 @@
 		"position": "SF",
 		"number": 12,
 		"photo": "zhaozhixu.png",
-		"offense": 75,
-		"defense": 55,
-		"stamina": 60,
+		"offense": 70,
+		"defense": 60,
+		"stamina": 70,
 		"awareness": 60,
-		"toughness": 60,
-		"consistency": 75
+		"toughness": 55,
+		"consistency": 80
 	},
 	{
 		"name": "刘心语",
@@ -148,7 +330,7 @@
 		"photo": "guoxinjie.png",
 		"offense": 70,
 		"defense": 75,
-		"stamina": 60,
+		"stamina": 65,
 		"awareness": 65,
 		"toughness": 60,
 		"consistency": 60
@@ -216,12 +398,12 @@
 		"position": "SG",
 		"number": 27,
 		"photo": "liupeichao.jpg",
-		"offense": 100,
-		"defense": 100,
-		"stamina": 100,
-		"awareness": 100,
-		"toughness": 100,
-		"consistency": 100
+		"offense": 99,
+		"defense": 99,
+		"stamina": 99,
+		"awareness": 99,
+		"toughness": 99,
+		"consistency": 99
 	},
 	{
 		"name": "罗云飞",
@@ -233,9 +415,9 @@
 		"offense": 75,
 		"defense": 70,
 		"stamina": 70,
-		"awareness": 70,
+		"awareness": 65,
 		"toughness": 65,
-		"consistency": 70
+		"consistency": 60
 	},
 	{
 		"name": "李阔",
@@ -245,11 +427,11 @@
 		"number": 30,
 		"photo": "likuo.png",
 		"offense": 65,
-		"defense": 65,
-		"stamina": 55,
+		"defense": 60,
+		"stamina": 50,
 		"awareness": 65,
 		"toughness": 65,
-		"consistency": 70
+		"consistency": 75
 	},
 	{
 		"name": "姜玉迪",
@@ -269,10 +451,10 @@
 		"name": "王明",
 		"height": 175,
 		"weight": 80,
-		"position": "SG",
+		"position": "PG",
 		"number": 37,
 		"photo": "wangming.png",
-		"offense": 65,
+		"offense": 60,
 		"defense": 60,
 		"stamina": 50,
 		"awareness": 65,
@@ -286,12 +468,12 @@
 		"position": "SF",
 		"number": 66,
 		"photo": "wangchangyuan.png",
-		"offense": 70,
+		"offense": 75,
 		"defense": 65,
 		"stamina": 70,
-		"awareness": 70,
-		"toughness": 65,
-		"consistency": 60
+		"awareness": 60,
+		"toughness": 75,
+		"consistency": 70
 	},
 	{
 		"name": "窦翔竞",
@@ -331,8 +513,8 @@
 		"offense": 75,
 		"defense": 80,
 		"stamina": 85,
-		"awareness": 45,
+		"awareness": 50,
 		"toughness": 60,
-		"consistency": 65
+		"consistency": 70
 	}
 ]
