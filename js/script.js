@@ -66,7 +66,7 @@ function renderPlayers(players) {
         card.innerHTML = `
             <div class="player-header">
                 <div class="player-info">
-                    <h3>${player.name}<span> ${player.number}</span></h3>
+                    <h3>${player.name}<span> ${player.number !== null ? player.number : ''}</span></h3>
                     <p><strong>位置:</strong> ${player.position}</p>
                     <p><strong>身高:</strong> ${player.height !== null ? player.height + 'cm' : ''}</p>
                     <p><strong>体重:</strong> ${player.weight !== null ? player.weight + 'kg' : ''}</p>
